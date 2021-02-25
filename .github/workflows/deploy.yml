@@ -19,7 +19,7 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           IMAGE_TAG: ${{ github.sha }}
-          REPOSITORY: ${{ github.event.com.ust.customer.entity.repository.name }}
+          REPOSITORY: ${{ github.event.repository.name }}
         run: |
           IMAGE=$DOCKER_USER/$REPOSITORY:$GITHUB_SHA
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD

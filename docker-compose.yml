@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  customer:
+    image: <image>
+    restart: always
+    ports:
+      - "8081:8081"
+    deploy:
+      restart_policy:
+        condition: any

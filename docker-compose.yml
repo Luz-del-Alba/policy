@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  customer:
+  policy:
     image: <image>
     restart: always
     ports:

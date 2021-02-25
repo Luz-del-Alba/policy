@@ -1,10 +1,10 @@
-package com.ust.customer;
+package com.ust.policy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CustomerApplicationTests {
+class PolicyApplicationTests {
 
 	@Test
 	void contextLoads() {

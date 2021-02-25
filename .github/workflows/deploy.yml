@@ -46,4 +46,4 @@ jobs:
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: 22
           script: |
-            sudo docker-compose -f /home/${{ secrets.REMOTE_USER }}/app/${{ github.event.repository.name }}/docker-compose.yml up -d
+            docker stack deploy --compose-file /home/${{ secrets.REMOTE_USER }}/app/${{ github.event.repository.name }}/docker-compose.yml luz-del-alba

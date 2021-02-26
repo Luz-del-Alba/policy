@@ -3,6 +3,7 @@ package com.ust.policy.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "customer")
 @Builder(toBuilder = true)
+@NoArgsConstructor
 public class Customer {
 
     @Id

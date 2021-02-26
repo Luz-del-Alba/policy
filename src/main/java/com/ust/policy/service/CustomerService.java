@@ -29,6 +29,7 @@ public class CustomerService {
 
         val newCustomer = Customer.builder()
                 .names(instance.getName())
+                .email(instance.getEmail())
                 .build();
 
         return this.customerRepository.save(newCustomer);

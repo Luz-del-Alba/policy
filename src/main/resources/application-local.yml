@@ -4,7 +4,7 @@ server:
     context-path: "/policy"
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/customer
+    url: jdbc:postgresql://luz-del-alba.eastus.cloudapp.azure.com:5432/customer
     username: root
     password: password
     driverClassName: org.postgresql.Driver

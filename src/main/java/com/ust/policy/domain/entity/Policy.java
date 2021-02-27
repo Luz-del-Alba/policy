@@ -1,7 +1,9 @@
 package com.ust.policy.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 
@@ -11,6 +13,8 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "policy")
 @Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class Policy {
 
     @Id

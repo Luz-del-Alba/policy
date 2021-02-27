@@ -2,6 +2,7 @@ package com.ust.policy.domain.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @Table(name = "customer")
 @Builder(toBuilder = true)
 @NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
     @Id
